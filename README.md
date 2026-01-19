@@ -1,8 +1,8 @@
-# 🇿🇦 Thuto AI - Intelligent Matric Assistant
+# <img src="client/public/logo.png" width="40" height="40" alt="Bot Logo"> Thuto AI - Intelligent Matric Assistant
 
 **Thuto AI** (meaning "Education" in Setswana/Sotho) is a Next-Gen Educational Platform designed to democratize high-quality STEM tutoring for South African students using Artificial Intelligence.
 
-## 🦁 The Problem in SA
+## 🤖 The Problem in SA
 South Africa faces a critical skills gap in STEM fields, exacerbated by:
 - Overcrowded classrooms (1:40+ teacher-student ratio).
 - Language barriers in technical subjects.

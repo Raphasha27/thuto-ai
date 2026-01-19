@@ -1,14 +1,14 @@
 <template>
   <div class="max-w-5xl mx-auto px-4 py-8">
     <div class="flex items-center justify-between mb-8">
-      <h1 class="text-3xl font-bold text-white">Provincial Leaderboard</h1>
+      <h1 class="text-3xl font-bold text-slate-900 dark:text-white">Provincial Leaderboard</h1>
       <div class="flex gap-2">
-        <select class="bg-slate-800 border-slate-700 text-slate-300 rounded focus:ring-sky-500 focus:border-sky-500 text-sm">
+        <select class="bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 rounded focus:ring-sky-500 focus:border-sky-500 text-sm shadow-sm">
           <option>Gauteng</option>
           <option>Western Cape</option>
           <option>KwaZulu-Natal</option>
         </select>
-        <select class="bg-slate-800 border-slate-700 text-slate-300 rounded focus:ring-sky-500 focus:border-sky-500 text-sm">
+        <select class="bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 rounded focus:ring-sky-500 focus:border-sky-500 text-sm shadow-sm">
           <option>All Time</option>
           <option>This Month</option>
           <option>This Week</option>
@@ -16,9 +16,9 @@
       </div>
     </div>
 
-    <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 shadow-xl">
+    <div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-xl">
       <table class="w-full text-left">
-        <thead class="bg-slate-900/50 text-slate-400 text-sm uppercase font-semibold">
+        <thead class="bg-slate-50 dark:bg-slate-900/50 text-slate-500 dark:text-slate-400 text-sm uppercase font-semibold">
           <tr>
             <th class="px-6 py-4">Rank</th>
             <th class="px-6 py-4">Student</th>
@@ -26,8 +26,8 @@
             <th class="px-6 py-4 text-right">Points</th>
           </tr>
         </thead>
-        <tbody class="divide-y divide-slate-700">
-          <tr v-for="(user, index) in users" :key="user.id" class="hover:bg-slate-700/30 transition-colors">
+        <tbody class="divide-y divide-slate-200 dark:divide-slate-700">
+          <tr v-for="(user, index) in users" :key="user.id" class="hover:bg-slate-50 dark:hover:bg-slate-700/30 transition-colors">
             <td class="px-6 py-4">
               <div v-if="index < 3" class="w-8 h-8 flex items-center justify-center rounded-full" 
                 :class="{
@@ -45,7 +45,7 @@
                   {{ user.initials }}
                 </div>
                 <div>
-                  <div class="font-medium text-white">{{ user.name }}</div>
+                  <div class="font-medium text-slate-900 dark:text-white">{{ user.name }}</div>
                   <div class="text-xs text-slate-500">{{ user.school }}</div>
                 </div>
               </div>
@@ -56,7 +56,7 @@
               </span>
             </td>
             <td class="px-6 py-4 text-right">
-              <span class="font-mono font-bold text-sky-400">{{ user.points.toLocaleString() }}</span>
+              <span class="font-mono font-bold text-indigo-600 dark:text-sky-400">{{ user.points.toLocaleString() }}</span>
             </td>
           </tr>
         </tbody>
