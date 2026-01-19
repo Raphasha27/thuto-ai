@@ -8,7 +8,7 @@
         <div class="items-center flex flex-wrap">
           <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
             <div class="inline-block p-4 rounded-full bg-slate-800 mb-6 ring-2 ring-sky-500/50 animate-bounce">
-              <span class="text-3xl">🦁🇿🇦</span>
+              <img src="/logo.png" alt="Thuto AI Robot" class="w-16 h-16">
             </div>
             <h1 class="text-white font-black text-5xl sm:text-7xl leading-tight mb-6">
               Master Your Matric <span class="bg-gradient-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent">With AI</span>
