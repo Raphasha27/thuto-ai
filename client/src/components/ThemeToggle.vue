@@ -1,5 +1,5 @@
 <template>
-  <button @click="toggleTheme" class="p-2 rounded-md hover:bg-slate-700 dark:hover:bg-slate-700 text-slate-700 dark:text-gray-200 transition-colors" title="Toggle Theme">
+  <button @click="toggleTheme" class="p-2 rounded-md hover:bg-gray-200 dark:hover:bg-slate-700 text-slate-700 dark:text-gray-200 transition-colors" title="Toggle Theme">
     <sun-icon v-if="isDark" class="w-5 h-5" />
     <moon-icon v-else class="w-5 h-5" />
   </button>
