@@ -1,8 +1,12 @@
-# <img src="client/public/logo.png" width="40" height="40" alt="Bot Logo"> Thuto AI - Intelligent Matric Assistant
+<p align="center">
+  <img src="client/public/logo.png" width="120" height="120" alt="Thuto AI Logo">
+</p>
 
-**Thuto AI** (meaning "Education" in Setswana/Sotho) is a Next-Gen Educational Platform designed to democratize high-quality STEM tutoring for South African students using Artificial Intelligence.
+<h1 align="center">Thuto AI - Intelligent Matric Assistant</h1>
 
-## 🤖 The Problem in SA
+<p align="center"><strong>Thuto AI</strong> (meaning "Education" in Setswana/Sotho) is a Next-Gen Educational Platform designed to democratize high-quality STEM tutoring for South African students using Artificial Intelligence.</p>
+
+## <img src="client/public/logo.png" width="24" height="24" alt="Robot" style="vertical-align: middle;"> The Problem in SA
 South Africa faces a critical skills gap in STEM fields, exacerbated by:
 - Overcrowded classrooms (1:40+ teacher-student ratio).
 - Language barriers in technical subjects.
