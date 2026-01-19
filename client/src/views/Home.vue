@@ -21,7 +21,7 @@
               <router-link to="/dashboard" class="bg-indigo-600 text-white active:bg-indigo-700 font-bold uppercase text-base px-8 py-4 rounded shadow-lg hover:shadow-indigo-500/30 outline-none focus:outline-none ease-linear transition-all duration-150">
                 Start Learning
               </router-link>
-              <router-link to="/subjects" class="bg-transparent border border-slate-500 text-slate-300 font-bold uppercase text-base px-8 py-4 rounded hover:bg-slate-800 ease-linear transition-all duration-150">
+              <router-link to="/subjects" class="bg-sky-500 hover:bg-sky-600 text-white font-bold uppercase text-base px-8 py-4 rounded shadow-lg hover:shadow-sky-500/30 outline-none focus:outline-none ease-linear transition-all duration-150">
                 Explore Subjects
               </router-link>
             </div>
