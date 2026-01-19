@@ -26,6 +26,28 @@ Thuto AI uses Large Language Models (LLMs) to:
 - **Micro-Learning**: 5-minute AI quizzes for students with limited data/time.
 - **Offline Mode**: Cache AI lessons for study during Load Shedding.
 
+## 📸 App Screenshots
+
+### Light & Dark Mode
+| Light Mode | Dark Mode |
+|:---:|:---:|
+| ![Light Mode](client/screenshots/home_light.png) | ![Dark Mode](client/screenshots/home_dark.png) |
+
+### Interactive Learning Journey
+| Dashboard | Subjects |
+|:---:|:---:|
+| ![Dashboard](client/screenshots/dashboard.png) | ![Subjects](client/screenshots/subjects.png) |
+
+### Adaptive Quiz Engine
+| Difficulty Selection | Quiz Interface |
+|:---:|:---:|
+| ![Difficulty](client/screenshots/difficulty.png) | ![Quiz Interface](client/screenshots/quiz.png) |
+
+### AI Support & Gamification
+| AI Hints | Provincial Leaderboard |
+|:---:|:---:|
+| ![AI Hint](client/screenshots/quiz_hint.png) | ![Leaderboard](client/screenshots/leaderboard.png) |
+
 ## 👤 Author
 **Koketso Raphasha**
 *Advancing Local Solutions with Global Tech.*
