@@ -16,7 +16,14 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.raphasha27.nexusslide"
+      "bundleIdentifier": "com.raphasha27.nexusslide",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Thuto AI uses the microphone for voice-based learning interactions.",
+        "NSCameraUsageDescription": "Thuto AI uses the camera for interactive learning exercises.",
+        "NSLocationWhenInUseUsageDescription": "Thuto AI uses your location to personalize regional learning content.",
+        "NSLocationAlwaysUsageDescription": "Thuto AI uses your location in the background for contextual learning reminders.",
+        "NSPhotoLibraryUsageDescription": "Thuto AI accesses your photo library for learning material uploads."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -24,7 +31,16 @@
         "backgroundColor": "#0F172A"
       },
       "package": "com.raphasha27.nexusslide",
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.CAMERA",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.VIBRATE"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png",
