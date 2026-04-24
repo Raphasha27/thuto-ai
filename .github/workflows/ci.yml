@@ -2,59 +2,38 @@ name: Continuous Integration
 
 on:
   workflow_dispatch:
-
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
 
 jobs:
-  mobile:
+  mobile: 
     name: Mobile (Expo)
-    runs-on:
-  workflow_dispatch:
- ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+    runs-on: - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version:
-  workflow_dispatch:
- '20'
-          cache: 'npm'
-      - name: Install dependencies
+          node-version: - name: Install dependencies
         run: npm install --legacy-peer-deps
       - name: Type Check
         run: npx tsc --noEmit || true
 
-  server:
+  server: 
     name: Server (Node.js)
-    runs-on:
-  workflow_dispatch:
- ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+    runs-on: - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version:
-  workflow_dispatch:
- '20'
-          cache: 'npm'
-      - name: Install dependencies
+          node-version: - name: Install dependencies
         working-directory: ./server
         run: npm install --legacy-peer-deps || true
       - name: Verify Server Build
         working-directory: ./server
         run: node -c server.js || true
 
-  security_scan:
+  security_scan: 
     name: Security Scan (Trivy)
     needs: [mobile, server]
-    runs-on:
-  workflow_dispatch:
- ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+    runs-on: - uses: actions/checkout@v4
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
@@ -63,4 +42,3 @@ jobs:
           format: 'table'
           exit-code: '0'
           severity: 'CRITICAL,HIGH'
-
