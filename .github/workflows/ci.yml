@@ -10,20 +10,24 @@ on:
 jobs:
   mobile: 
     name: Mobile (Expo)
-    runs-on: - uses: actions/checkout@v4
+    runs-on: -
+    uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: - name: Install dependencies
+          node-version: -
+    name: Install dependencies
         run: npm install --legacy-peer-deps
       - name: Type Check
         run: npx tsc --noEmit || true
 
   server: 
     name: Server (Node.js)
-    runs-on: - uses: actions/checkout@v4
+    runs-on: -
+    uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: - name: Install dependencies
+          node-version: -
+    name: Install dependencies
         working-directory: ./server
         run: npm install --legacy-peer-deps || true
       - name: Verify Server Build
@@ -33,7 +37,8 @@ jobs:
   security_scan: 
     name: Security Scan (Trivy)
     needs: [mobile, server]
-    runs-on: - uses: actions/checkout@v4
+    runs-on: -
+    uses: actions/checkout@v4
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
