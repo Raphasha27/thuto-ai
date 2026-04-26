@@ -3,36 +3,40 @@ name: Deploy Web to GitHub Pages
 on:
   workflow_dispatch:
   push:
-    branches: [ master ]
+    branches: [ master, main ]
   pull_request:
-    branches: [ master ]
+    branches: [ master, main ]
 
 jobs:
   deploy:
-    runs-on: steps:
-      - name: 🏗 Checkout
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: ⚙️ Setup Node
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: cache: 'npm'
+          node-version: 20
+          cache: 'npm'
 
-      - name: 📦 Install dependencies
-        run: npm install
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
 
-      - name: 🏗 Build Web
+      - name: Build Web
         run: npx expo export --platform web
 
-      - name: 🚀 Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with: 
-    github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+
   security_scan: 
     name: Security Scan (Trivy)
-    runs-on: -
-    uses: actions/checkout@v4
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
