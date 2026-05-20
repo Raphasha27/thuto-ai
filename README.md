@@ -1,84 +1,31 @@
-# 🏛️ KIROV DYNAMICS | THUTO AI
-### Intelligent Learning for a Sovereign Era
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:00ffcc&height=200&section=header&text=thuto-ai&fontSize=50&fontColor=ffffff&fontAlignY=40&desc=Private%20Startup%20Architecture&descAlignY=65" width="100%"/>
 
-[![Kirov Dynamics](https://img.shields.io/badge/Kirov_Dynamics-Sovereign_Intelligence-002D62?style=for-the-badge&labelColor=0d1117)](https://github.com/Raphasha27)
-[![Health Hub](https://img.shields.io/badge/Security-Health_Hub_Hardened-blue?style=for-the-badge&labelColor=0d1117)](https://github.com/Raphasha27/Health-Hub)
-[![Status](https://img.shields.io/badge/Status-Success-success?style=for-the-badge&logo=github-actions&logoColor=white&color=2ea44f&style=for-the-badge&labelColor=0d1117)](https://github.com/Raphasha27/Health-Hub)
+  [![Status](https://img.shields.io/badge/Status-Offline%20for%20Upgrades-ff4b4b?style=for-the-badge)](#)
+  [![Visibility](https://img.shields.io/badge/Visibility-Private%20Core-8957e5?style=for-the-badge)](#)
+</div>
 
----
+## ?? Overview
+Welcome to the internal private repository for **thuto-ai**. 
 
-## 🚀 Overview
+> **Note on Deployment:** Any previous live deployments (e.g., Vercel, Heroku) tied to this repository have been suspended to prevent 404 billing errors. This project is currently offline while the infrastructure is migrated to our internal sovereign cloud network.
 
-**Thuto-AI** is a state-of-the-art intelligent tutoring ecosystem designed to democratize high-end education through artificial intelligence. As a core educational asset of **Kirov Dynamics**, it implements personalized pedagogy and autonomous curricula adaptation to ensure every student reaches their peak potential.
+## ?? Key Architectural Features
+- **High-Performance Core:** Built for scalability and autonomous operations.
+- **Modern UI/UX:** Features advanced dashboard logic and secure routing.
+- **Sovereign Infrastructure Ready:** Refactoring for the Kirov Dynamics ecosystem.
 
-> **"Moving education from static classrooms into dynamic, AI-driven knowledge hubs."**
+## ??? Local Development Setup
+To run this project locally without relying on external cloud providers:
 
----
-
-## 🧠 System Architecture: The Sovereign Learner Loop
-
-```mermaid
-graph TD
-    Student([Student]) --> Interface[React/Expo Mobile Interface]
-    Interface --> Core{Thuto-AI Engine}
-    
-    subgraph Intelligence Layer
-        Core --> LLM[Multi-Modal LLM: Claude/GPT-4o]
-        LLM --> Graph[Adaptive Knowledge Graph]
-        Graph --> Core
-    end
-    
-    subgraph Data & Storage
-        Core --> DB[(PostgreSQL / Supabase)]
-        DB --> Analytics[Progress Analytics]
-    end
-    
-    Analytics --> Teacher([Tutor/Admin Dashboard])
-    Core --> Feedback[Real-time Feedback & Scaffolding]
-    Feedback --> Student
-```
-
----
-
-## ✨ Features (v4.0 - Hardened Edition)
-
-- **🧩 Adaptive Knowledge Graphs**: Dynamically maps a student's understanding across subjects, identifying and bridging knowledge gaps in real-time.
-- **🎙️ Voice-Enabled Scaffolding**: Natural language interaction for students, powered by high-speed AI voice synthesis.
-- **🗺️ Personalized Curricula**: Generates custom lesson plans based on individual performance metrics and learning speed.
-- **📱 Cross-Platform Fluidity**: Unified experience across Web (React) and Mobile (Expo/React Native).
-- **🛡️ Health Hub Hardening**: 
-  - **Zero-Noise CI**: Integrated with the Health Hub v4.0 protocol for silent maintenance.
-  - **Success Lock-in**: Automated success state enforcement for all deployments.
-
----
-
-## 🛠️ Technology Stack
-
-- **Frontend**: React 18, Expo (Mobile), Tailwind CSS (Web)
-- **Backend**: Node.js, Express, Supabase (Auth & DB)
-- **Intelligence**: LangChain, OpenAI GPT-4o, Claude 3.5 Sonnet
-- **Infrastructure**: Vercel (Web), GitHub Actions (Hardened CI/CD)
-
----
-
-## 📦 Getting Started
-
-**Clone and Install:**
-```bash
-git clone https://github.com/Raphasha27/thuto-ai
+`ash
+git clone https://github.com/Raphasha27/thuto-ai.git
 cd thuto-ai
-npm install
-```
+# Install dependencies according to package manager (npm/pip/cargo)
+# Start the local development server
+`
 
-**Launch Development Environment:**
-```bash
-# For Web
-npm start
-
-# For Mobile (Expo)
-npx expo start
-```
-
----
-
-© 2026 **Kirov Dynamics Technology** | Developed by **Raphasha27**
+## ?? Roadmap
+- [x] Clear dead Vercel/Heroku links to prevent 404 routing errors.
+- [ ] Migrate CI/CD to local GitHub Actions.
+- [ ] Deploy isolated -lab environment.
