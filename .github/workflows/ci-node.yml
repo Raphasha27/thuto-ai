@@ -17,8 +17,8 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci --legacy-peer-deps
-      - run: npm run lint
-      continue-on-error: true --if-present
+      - run: npm run lint --if-present
+        continue-on-error: true
 
   typecheck:
     name: TypeScript Check
