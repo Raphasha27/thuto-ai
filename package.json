@@ -17,7 +17,7 @@
     "expo-av": "^16.0.8",
     "expo-font": "^14.0.10",
     "expo-linear-gradient": "^57.0.0",
-    "expo-location": "^19.0.8",
+    "expo-location": "^57.0.7",
     "expo-status-bar": "~57.0.0",
     "lucide-react-native": "^1.27.0",
     "phaser": "^4.2.1",
