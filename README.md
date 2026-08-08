@@ -29,3 +29,9 @@ cd client && npm install && npm run dev
 ## License
 
 MIT
+
+## Contributors
+
+This project is developed and maintained together with the team:
+- [Raphasha27](https://github.com/Raphasha27) — Project lead & maintainer
+- [DkMash](https://github.com/DkMash) — Teammate
